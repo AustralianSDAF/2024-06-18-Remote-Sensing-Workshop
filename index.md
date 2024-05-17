@@ -87,52 +87,40 @@ Edit the general explanatory paragraph below if you want to change
 the pitch.
 {% endcomment %}
 
+      
+
+
 <p>
-<strong><a href="https://carpentries.org">The Carpentries</a></strong> project comprises the <a
-href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, and
-<a href="{{site.lc_site}}">Library Carpentry</a> communities of Instructors, Trainers, Maintainers,
-helpers, and supporters who share a mission to teach foundational computational and data science
-skills to researchers.
-<p align="center">
-  <em>
-  <strong>Want to learn more and stay engaged with The Carpentries?</strong> Carpentries Clippings is The Carpentries' biweekly newsletter, where we share community news, community job postings, and more.
-Sign up to receive future editions and read our full archive: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
-  </em>
-</p>
-{% if site.carpentry == "swc" %}
-{% include swc/intro.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/intro.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/intro.html %}
-{% endif %}
+This workshop, provided by <strong><a href="https://asdaf.space/">The Australian Space Data Analysis Facility (ASDAF)</a></strong>
+      in partnership with <strong><a href="https://www.landgate.wa.gov.au/">Landgate</a></strong>,
+      is intended to be a hands-on, foundational lesson in the acquistion, use, and interrogation of remote sensing data
+      products using python.
+    <p>
+      After this workshop, you will be able to:
+    </p>
+    <p align="center">
+      <em>
+        <ul>
+          <li> Query and download satellite data from a web-server programmatically using python </li>
+          <li> Read and visualise satellite data using python</li>
+          <li> Load and create vector data in python </li>
+          <li> Use Vector data to mask satellite data in python </li>
+          <li> Create derivative products (NDVI, etc) using python </li>
+          <li> Create a data pipeline for processing satellite data automatically </li>
+          <li> (Time-permitting) Parallelise satellite data calculations using python</li>
+        </ul>
+      </em>
+    </p>
 
-{% if site.pilot %}
-This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
-{% endif %}
 
-{% comment %}
-AUDIENCE
 
-Explain who your audience is.  (In particular, tell readers if the
-workshop is only open to people from a particular institution.
-{% endcomment %}
-{% if site.carpentry == "swc" %}
-{% include swc/who.html %}
-{% elsif site.carpentry == "dc" %}
+
 {% include dc/who.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/who.html %}
-{% endif %}
 
-{% comment %}
-LOCATION
 
-This block displays the address and links to maps showing directions
-if the latitude and longitude of the workshop have been set.  You
-can use https://www.latlong.net/ to find the lat/long of an
-address.
-{% endcomment %}
+
+
+
 {% assign begin_address = page.address | slice: 0, 4 | downcase  %}
 {% if page.address == "online" %}
 {% assign online = "true_private" %}
