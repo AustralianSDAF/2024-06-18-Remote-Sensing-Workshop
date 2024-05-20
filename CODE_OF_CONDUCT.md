@@ -4,7 +4,7 @@ title: "Workshop Code of Conduct"
 ---
 ## Expected behaviour
 
-All participants in our events and communications are expected to show respect and courtesy to others. All interactions should be professional regardless of platform: either online or in-person. In order to foster a positive and professional learning environment we encourage the following kinds of behaviours in all Carpentries events and platforms:
+All participants in our events and communications are expected to show respect and courtesy to others. All interactions should be professional regardless of platform: either online or in-person. In order to foster a positive and professional learning environment we encourage the following kinds of behaviours in all events and platforms:
 
 - Use welcoming and inclusive language
 - Be respectful of different viewpoints and experiences
