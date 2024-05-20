@@ -53,7 +53,7 @@ Notices:
   Except where otherwise noted, all other material including the example programs and other software
   provided are made available under the
   [OSI][osi]-approved
-  [Apache 2.0 license][apache-license].
+  [Apache 2.0 license][apache-license] as of publication in 2024. 
   
   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION  
   ### 1. Definitions.

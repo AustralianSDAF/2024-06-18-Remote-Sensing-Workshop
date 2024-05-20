@@ -32,4 +32,4 @@ Examples of unacceptable behaviour by participants at any Carpentries event/plat
 
 ## Consequences of Unaccpetable behavior
 
-Participants who are asked to stop any inappropriate behaviour are expected to comply immediately. This applies to any platform, either online or in-person. If a participant engages in behaviour that violates this code of conduct, the organisers may warn the offender, ask them to leave the event or platform (without refund), and/or initiate an investigation into the Code of Conduct violation and impose appropriate sanctions.
+Participants who are asked to stop any inappropriate behaviour are expected to comply immediately. This applies to any platform, either online or in-person. If a participant engages in behaviour that violates this code of conduct, the organisers may warn the offender, ask them to leave the event or platform (without refund), and/or initiate an investigation into the Code of Conduct violation, impose appropriate sanctions, and/or take other actions as appropriate.
