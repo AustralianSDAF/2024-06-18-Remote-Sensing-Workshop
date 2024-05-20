@@ -1,65 +1,160 @@
 ---
 layout: page
-title: Testing Setup
+title: Getting your computer ready for the workshop.
 root: ..
 ---
+---
 
-This directory contains scripts for testing your machine to make sure
-you have the software you'll need for your workshop installed.  To use
-these scripts:
+# Preamble <a name="preamble"></a>
 
-1.  Download [swc-installation-test-1.py](swc-installation-test-1.py).
+This workshop requires several pieces of software to be set up on your computer to participate.  
+The workshop organizers do however note that due to institutional limiations, this may not be possible on your machine due to a lack of adminstrative rights.  
+We therefore present you with a preferred local installation method, and a web-based method that only requires a google account. Please attempt the local setup, but if you are unable to complete it, please complete the online setup.  
+  
+If you run into issues, please email the organizers (contact link on main workshop page) for help. There will also be an additional 30 minutes before the workshop where we may be able to help with installation issues. If you need additional help that was unable to be sorted out by email, please come early.
 
-2.  Run it from the shell:
+---
 
-    ~~~
-    $ python swc-installation-test-1.py
-    Passed
-    ~~~
 
-3.  Download [swc-installation-test-2.py](swc-installation-test-2.py).
+# Table of Contents
+1. [Preamble](#preamble)
+2. [Local Setup](#local-setup)
+3. [Online Setup](#online-setup)
 
-4.  Run it from the shell:
+---
 
-    ~~~
-    $ python swc-installation-test-2.py
-    check virtual-shell...  pass
-    ...
-    Successes:
+# Local Installation Overview <a name="local-setup"></a>
+This workshop will be run using python [jupyter notebooks](https://jupyter.org/). For simplicity, we will run these using [Visual Studio Code ("VSCode")](https://code.visualstudio.com/) (not to be confused with Visual Studio).  
 
-    virtual-shell Bourne Again Shell (bash) 4.2.37
-    ...
-    ~~~
+The steps will be:
+1. Download and install VSCode
+2. Download workshop material
+3. Set up the enviornment using conda
+4. Link VSCode with the environment
 
-    If you see something like:
+## Requirements
+The requirements to set up a local installation are:
+- Adminstrative access to your machine, or **VSCode** and **miniforge** already having been installed
+- At least a gigabyte of free space. It would be prudent to have at least 10GB of free space for data downloaded during the workshop.
 
-    ~~~
-    $ python swc-installation-test-2.py
-    check virtual-shell...  fail
-    ...
-    check for command line shell (virtual-shell) failed:
-      command line shell (virtual-shell) requires at least one of the following dependencies
-      For instructions on installing an up-to-date version, see
-      http://software-carpentry.org/setup/
-      causes:
-      check for Bourne Again Shell (bash) failed:
-        could not find 'bash' executable for Bourne Again Shell (bash)
-        For instructions on installing an up-to-date version, see
-        http://software-carpentry.org/setup/
-    ...
-    ~~~
 
-    follow the suggestions to try and install any missing software.  For
-    additional troubleshooting information, you can use the `--verbose`
-    option:
 
-    ~~~
-    $ python swc-installation-test-2.py --verbose
-    check virtual-shell...  fail
-    ...
-    ==================
-    System information
-    ==================
-    os.name            : posix
-    ...
-    ~~~
+## Download and Initial Setup
+
+
+1. Download the VSCode installer from the [website](https://code.visualstudio.com/)
+
+2. Run the installer with default settings. 
+
+3. Once installed, launch VSCode, and click on the "Extensions" button on the left hand side, which looks like a few blocks (leave your mouse stationary over an icon for a second for its name to pop up.)
+
+4. Search for the following extensions and install each of them. The author of the packages will be listed alongside the name. To install a package, after searching for it, click the name, then click the "install" button and it will begin installing.  The packages to install are:
+  - Python - "Microsoft"
+  - Jupyter - "Microsoft"
+
+## Environment Setup
+When creating software to process data or writing code in general, it's a good idea to make what you do reproducible. This makes it so if you need to run your code  in 6 months, a year, or even further down the line, everything still works. For example, if you originally installed version 3.5 of a library when processing data, but 6 months later one of the libraries introduced a breaking change, without a record of which versions of which libraries you were using, it will take a lot of work to get your code working again. Even subtler changes in libraries can simply make the *output* change, without much indication. 
+
+For these reasons, for this workshop we have created an **environment** - a set of software including python and any libraries you used all held at specific versions to ensure comtability. This is recorded in an **environment file**.   
+
+You will need to install the environment described by the environment file using the a piece of software called "conda" (from "Anaconda")
+
+1. Download the files for this workshop as a .zip file the [github repository](https://github.com/AustralianSDAF/ASDAF_Workshop_Materials_Remote_Sensing_Intro). To do this, click the green "<> Code" icon in the top-right, and click "download ZIP" in the dropdown menu.
+ Save this to a location that makes sense to you, such as your documents folder or your desktop. Try not to save this to a locally mounted one-drive, as that can cause issues later. Extract the .zip folder downloaded into a regular folder (right click>extract to)
+
+2. Download the Miniforge3 installer. This means for windows you should download [this file](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe). For OS X (mac) or linux, download the installer that matches your architecture (x86_64 vs arm64) from [its github repository](https://github.com/conda-forge/miniforge)
+
+3. Run the installer with default settings
+
+4. Open the start menu. Search for and launch "Anaconda Prompt (miniconda3)"
+
+5. In the command prompt that opens, navigate to the workshop materials folder you downloaded earlier using the "Change directory" command "cd". E.g if you saved it in your documents, run 
+  ```sh
+  cd C:/Users/<your username>/Documents
+  ```
+6. In the command prompt, run:
+```sh
+conda config --set channel_priority strict
+conda env create --file environment.yml
+```
+
+7. To activate the enviornment, run:
+```
+conda activate asdaf-workshop
+```
+
+Your enviornment should now be installed.
+
+## Enabling enviornment in VSCode
+Now that you have your enviornment, we need to set it up in VSCode.
+
+1. Exit VSCode if it's open, then Launch VSCode
+
+2. Click "Open File" and navigate to the workshop materials you downloaded earlier (e.g. In your Documents), then click "Open"
+
+3. You should see several folders and files in the sidebar, including "notebooks". Click on the "notebooks folder" to expand the contents, and then double-click on "00 - Testing notebook.ipynb"
+
+4. Run the first cell. You should get ouput like below, listing the package names and versions
+
+If you see that, you're all set up!
+
+
+---
+
+# Online Setup <a name="online-setup"></a>
+
+## Introduction
+If you have difficulty setting up the local installation, you should be able to use [Google colab](https://colab.google/) for the workshop. 
+
+## Requirements
+Google colab provides free access to CPU's to use with a notebook, but does require a google account and sufficient storage. This shouldnt be a problem unless you've already stored a lot of data on your google drive. In this case, please backup these files appropriatly and make at least 10GB, preferably 20GB of space.
+
+## Setup steps
+
+1. Download the files for this workshop as a .zip file the [github repository](https://github.com/AustralianSDAF/ASDAF_Workshop_Materials_Remote_Sensing_Intro). To do this, click the green "<> Code" icon in the top-right, and click "download ZIP" in the dropdown menu.
+ Save this to a location that makes sense to you, such as your documents folder or your desktop. Try not to save this to a locally mounted one-drive, as that can cause issues later. Extract the .zip folder downloaded into a regular folder (right click>extract to)
+ 
+2. Create or log in to your google account in a web browser at [google.com](https://google.com) (click the "sign-in" button in the top-right)
+
+3. Go to your [Google Drive](https://drive.google.com/drive/home).
+
+
+4. Click "My Drive" Drag the folder you downloaded and extracted in step 1. of this section into the Google Drive window and upload it.
+
+5. Open the folder you uploaded by double-clicking, then open the "notebooks" folder. Double-click on "00 - Testing notebook.ipynb". This will open a new Google collab tab . 
+
+
+6. Go to this new tab. Scroll down to the google collab section, and run the first cell that says :
+  ```py
+  from google.colab import drive
+  drive.mount('/content/drive')
+  ```
+  and a window should pop up.
+
+7. Folow the promps in the pop up window, and make sure "See, edit, create and delete any of your Google Drive documents" is ticked. This will let you access your google drive in the notebook.
+
+8. The cell should run without error.
+
+9. Run the cell at the bottom of the notebook, `!ls /content/drive/MyDrive`. This should list the contents of your drive. If it does, the linking has worked!
+
+10. Run the cell below, `!pip install rioxarray eodag`. This should install the nescesary packages for this workshop not already bundled with collab.
+
+
+11. Now run the cell at the very top that says
+
+```py
+import numpy
+import numba
+import pandas
+import rioxarray
+import xarray
+
+for package in [numpy, numba, pandas, rioxarray, xarray]:
+    print(f"{package.__name__} version: {package.__version__}")
+```
+
+  If you get a series of packages printed and then a version number with no errors, it worked!
+
+12. During the workshops, you will need to open notebooks from your google drive. You will also need to mount your google drive each time you open a new notebook, and access your ensure your data paths start with `'/content/drive/(other folder as applicable)'`. Help on this will be available in the workshop.
+
+
