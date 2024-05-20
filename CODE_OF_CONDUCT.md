@@ -15,7 +15,7 @@ All participants in our events and communications are expected to show respect a
 
 ## Unacceptable behaviour
 
-Examples of unacceptable behaviour by participants at any Carpentries event/platform include:
+Examples of unacceptable behaviour by participants at any event/platform include:
 - written or verbal comments which have the effect of excluding people on the basis of membership of any specific group
 - causing someone to fear for their safety, such as through stalking, following, or intimidation
 - violent threats or language directed against another person
