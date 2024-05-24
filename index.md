@@ -223,7 +223,7 @@ Display the contact email address set in the configuration file.
 
 <p id="who-can-attend">
     <strong>Who can attend?:</strong>
-    This workshop is open to employees of DBCA, DPLH, DFES, and Landgate, or as otherwise invited.
+    This workshop is currently invitation only.
 </p>
 
 <hr/>
