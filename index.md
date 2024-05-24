@@ -158,9 +158,10 @@ This workshop, provided by <strong><a href="https://asdaf.space/">The Australian
 
 <p id="requirements">
   <strong>Requirements:</strong>
-    Participants must bring a laptop with a
+    It is preferable that participants must bring a laptop with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
-  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  They should have a few specific software packages installed (listed on the <a href="setup">setup page</a>).  <br/>
+  <b>If you cannot get the listed software installed or don't have adminstrative privileges</b>, please set up an online colab instance (listed on the  <a href="setup/#online-setup">setup page</a>).
 </p>
 
 {% comment %}
@@ -242,7 +243,7 @@ Everyone who participates in is required to conform to the Code of Conduct.
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop. These surveys help us both tailor the material to the current skillsets and abilities of those present, while also giving us feedback on what we did well and where we can improve.</p>
 <p><a href="https://www.zombo.com/">Pre-workshop Survey</a> (not created yet)</p>
-<p><a href="https://www.nyan.cat/">Post-workshop Survey</a> (not created yet)</p>
+Post-workshop Survey</a> (not created yet)</p>
 
 
 <hr/>
@@ -281,18 +282,22 @@ of code below the Schedule `<h2>` header below with
 
 
 <h2 id="setup">Setup</h2>
+<p>
+  The setup instructions for this workshop
+  can be found at <a href="setup">
+    the setup page on this website</a>.
+</p>
 
 <p>
   To participate in a this
   workshop,
-  you will need access to software as described below.
+  you will need access to software as described above.
   In addition, you will need an up-to-date web browser.
 </p>
 <p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
+  The carpentries maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
 
 
-{% include dc/setup.html %}
