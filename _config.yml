@@ -53,14 +53,14 @@ pilot: false
 # Most workshops don't use extra pages. More information about extra
 # pages are included in the README:
 # https://github.com/carpentries/workshop-template#creating-extra-pages
-title: "Working with Remote Sensing data in Python"
+title: "Remote Sensing Data Processing using Python"
 
 #------------------------------------------------------------
 # Incubator workshop settings (only relevant for workshops teaching a lesson
 # in The Carpentries Incubator).
 #
 # For an Incubator workshop, uncomment the line below and add the URL of the lesson site.
-incubator_lesson_site: "https://carpentries-incubator.github.io/geospatial-python/"
+# incubator_lesson_site: "https://carpentries-incubator.github.io/geospatial-python/"
 #
 # For an Incubator workshop, uncomment the line below and add the URL of your pre-workshop survey
 # incubator_pre_survey: "put the URL of your pre-workshop survey here"
