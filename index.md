@@ -130,7 +130,7 @@ This workshop, provided by <strong><a href="https://asdaf.space/">The Australian
 <p id="accessibility">  <br>
   <strong>Accessibility:</strong> <br>
 {% if online == "false" %}
-  We are committed to making this workshop
+  We are committed to making this workshop 
   accessible to everybody:
 </p>
 <ul>
