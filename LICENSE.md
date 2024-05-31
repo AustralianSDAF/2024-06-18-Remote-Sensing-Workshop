@@ -2,7 +2,8 @@
 layout: page
 title: "Licenses"
 ---
-Material included is original, unmodidifed, and modified under license from both the [Carpentries][carpentries] and [Geoscience Australia][GA]
+Material included is original, unmodidifed, and modified under license from both the [Carpentries][carpentries] and [Geoscience Australia][GA]. <br>
+Website materials are modidified from the Carpentries, and lesson material is as marked in the lessons.
 ## Instructional Material
 
 All instructional material is

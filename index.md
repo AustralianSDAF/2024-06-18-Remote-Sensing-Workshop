@@ -4,15 +4,15 @@ layout: workshop      # DON'T CHANGE THIS.
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
 venue: "Curtin - TBD"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: "Curtin University, Kent St Bentley"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+address: "Room 542 T.L Robertson Library, Curtin University, Kent St Bentley"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "au"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
-latitude: "45"        # decimal latitude of workshop venue (use https://www.latlong.net/)
-longitude: "-1"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "TBD - possibly June 18th 2024"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "9:00 am"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
-startdate: 2024-06-18      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2024-06-18        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+latitude: "-32.0054572"        # decimal latitude of workshop venue (use https://www.latlong.net/)
+longitude: "115.8943362"       # decimal longitude of the workshop venue (use https://www.latlong.net)
+humandate: "June 14th 2024"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 5:00pm"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
+startdate: 2024-06-14      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2024-06-14        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Leigh Tyers"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Calvin Pang"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["leigh.tyers@curtin.edu.au",]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
@@ -20,62 +20,12 @@ collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g.
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
-{% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
-
-{% comment %}
-HEADER
-
-Edit the values in the block above to be appropriate for your workshop.
-If the value is not 'true', 'false', 'null', or a number, please use
-double quotation marks around the value, unless specified otherwise.
-And run 'make workshop-check' *before* committing to make sure that changes are good.
-{% endcomment %}
 
 
 
-{% comment %}
-Check DC curriculum
-{% endcomment %}
 
-{% if site.carpentry == "dc" %}
-{% unless site.curriculum == "dc-astronomy" or site.curriculum == "dc-ecology" or site.curriculum == "dc-genomics" or site.curriculum == "dc-geospatial" or site.curriculum == "dc-image" or site.curriculum == "dc-socsci" %}
-<div class="alert alert-warning">
-It looks like you are setting up a website for a Data Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>dc-image</code>, <code>dc-astronomy</code>, <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
-</div>
-{% endunless %}
-{% endif %}
 
-{% comment %}
-Check SWC curriculum
-{% endcomment %}
 
-{% if site.carpentry == "swc" %}
-{% unless site.curriculum == "swc-inflammation" or site.curriculum == "swc-gapminder" %}
-<div class="alert alert-warning">
-It looks like you are setting up a website for a Software Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>swc-inflammation</code>, or <code>swc-gapminder</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
-</div>
-{% endunless %}
-{% endif %}
-
-{% comment %}
-EVENTBRITE
-
-This block includes the Eventbrite registration widget if
-'eventbrite' has been set in the header.  You can delete it if you
-are not using Eventbrite, or leave it in, since it will not be
-displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
-{% if page.eventbrite %}
-<strong>Some adblockers block the registration window. If you do not see the
-  registration box below, please check your adblocker settings.</strong>
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="280px"
-  scrolling="auto">
-</iframe>
-{% endif %}
 
 
 <h2 id="general">General Information</h2>
@@ -107,6 +57,7 @@ This workshop, provided by <strong><a href="https://asdaf.space/">The Australian
           <li> Use Vector data to mask satellite data in python </li>
           <li> Create derivative products (NDVI, etc) using python </li>
           <li> Create a data pipeline for processing satellite data automatically </li>
+          <li> (Time-permitting) Create efficient custom raster caclulations using numba</li>
           <li> (Time-permitting) Parallelise satellite data calculations using python</li>
         </ul>
       </em>
@@ -114,8 +65,15 @@ This workshop, provided by <strong><a href="https://asdaf.space/">The Australian
 
 
 
-
-{% include dc/who.html %}
+<p id="who"><br>
+  <strong>Who:</strong><br>
+  This workshop assumes you have at least basic knowledge of Python and some experience with GIS data/software (e.g.
+  QGIS) <br>
+  <strong>
+    You don't need to have any previous knowledge of the tools
+    that will be presented at the workshop.
+  </strong>
+</p>
 
 
 
@@ -130,13 +88,16 @@ This workshop, provided by <strong><a href="https://asdaf.space/">The Australian
 {% assign online = "false" %}
 {% endif %}
 {% if page.latitude and page.longitude and online == "false" %}
-<p id="where">
-  <strong>Where:</strong>
-  {{page.address}}.
+<p id="where">  <br>
+  <strong>Where:</strong> <br>
+  {{page.address}}. 
+  <br>
   Get directions with
-  <a href="https://properties.curtin.edu.au/visit-curtin/campus-maps/">the Curtin Campus Map</a>
+  <a href="https://link.mazemap.com/mkozbmai">the Curtin Campus Map</a>
   or
-  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
+  <a href="https://maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
+  <br>
+  Take one of the elevators on the south side to the fifth floor. The room will is approximately in the center of the floor, with appropriate signage.
 </p>
 {% endif %}
 
@@ -146,8 +107,8 @@ This workshop, provided by <strong><a href="https://asdaf.space/">The Australian
 
 
 {% if page.humandate %}
-<p id="when">
-  <strong>When:</strong>
+<p id="when">  <br>
+  <strong>When:</strong> <br>
   {{page.humandate}}.
   {% include workshop_calendar.html %}
 </p>
@@ -156,29 +117,25 @@ This workshop, provided by <strong><a href="https://asdaf.space/">The Australian
 
 
 
-<p id="requirements">
-  <strong>Requirements:</strong>
-    It is preferable that participants must bring a laptop with a
+<p id="requirements"> <br>
+  <strong>Requirements:</strong> <br>
+   NB: The requirements are currently subject to change, pending the results of the initial feedback survey. We will inform you of the results. <br>
+    It is preferable that participants bring a laptop with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
   They should have a few specific software packages installed (listed on the <a href="setup">setup page</a>).  <br/>
   <b>If you cannot get the listed software installed or don't have adminstrative privileges</b>, please set up an online colab instance (listed on the  <a href="setup/#online-setup">setup page</a>).
 </p>
 
-{% comment %}
-ACCESSIBILITY
 
-Modify the block below if there are any barriers to accessibility or
-special instructions.
-{% endcomment %}
-<p id="accessibility">
-  <strong>Accessibility:</strong>
+<p id="accessibility">  <br>
+  <strong>Accessibility:</strong> <br>
 {% if online == "false" %}
   We are committed to making this workshop
-  accessible to everybody.  For workshops at a physical location, the workshop organizers have checked that:
+  accessible to everybody:
 </p>
 <ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
+  <li>The room is wheelchair accessible.</li>
+  <li>Accessible restrooms should be available.</li>
 </ul>
 <p>
   Materials will be provided in advance of the workshop and
@@ -189,7 +146,7 @@ special instructions.
   We are dedicated to providing a positive and accessible learning environment for all. 
   We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. 
   However, we do want to help create an inclusive, accessible experience for all participants. 
-  We encourage you to share any information that would be helpful to make your Carpentries experience accessible.
+  We encourage you to share any information that would be helpful to make the workshop accessible.
   To request an accommodation for this workshop, please fill out the 
   <a href="https://carpentries.typeform.com/to/B2OSYaD0">accommodation request form</a>.
   If you have questions or need assistance with the accommodation form please <a href="mailto:team@carpentries.org">email us</a>.
@@ -201,8 +158,8 @@ CONTACT EMAIL ADDRESS
 
 Display the contact email address set in the configuration file.
 {% endcomment %}
-<p id="contact">
-  <strong>Contact:</strong>
+<p id="contact"><br>
+  <strong>Contact:</strong><br>
   Please email
   {% if page.email %}
   {% for email in page.email %}
@@ -222,8 +179,8 @@ Display the contact email address set in the configuration file.
 </p>
 
 
-<p id="who-can-attend">
-    <strong>Who can attend?:</strong>
+<p id="who-can-attend"><br>
+    <strong>Who can attend?:</strong><br>
     This workshop is currently invitation only.
 </p>
 
@@ -233,7 +190,7 @@ Display the contact email address set in the configuration file.
 <h2 id="code-of-conduct">Code of Conduct</h2>
 
 <p>
-Everyone who participates in is required to conform to the Code of Conduct.
+Everyone who participates in this workshop is required to conform to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a>.
 </p>
 
 
@@ -242,8 +199,8 @@ Everyone who participates in is required to conform to the Code of Conduct.
 
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop. These surveys help us both tailor the material to the current skillsets and abilities of those present, while also giving us feedback on what we did well and where we can improve.</p>
-<p><a href="https://www.zombo.com/">Pre-workshop Survey</a> (not created yet)</p>
-Post-workshop Survey</a> (not created yet)</p>
+<p>Pre-workshop Survey (to be sent out)</p>
+Post-workshop Survey (to be sent out after workshop)</p>
 
 
 <hr/>
@@ -272,8 +229,10 @@ of code below the Schedule `<h2>` header below with
 {% endcomment %}
 
 <h2 id="schedule">Schedule</h2>
-
-{% include dc/schedule.html %}
+TBD
+{% comment %}
+ {% include dc/schedule.html %}
+{% endcomment %}
 
 
 
