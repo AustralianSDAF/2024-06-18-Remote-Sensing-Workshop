@@ -119,7 +119,6 @@ This workshop, provided by <strong><a href="https://asdaf.space/">The Australian
 
 <p id="requirements"> <br>
   <strong>Requirements:</strong> <br>
-   NB: The requirements are currently subject to change, pending the results of the initial feedback survey. We will inform you of the results. <br>
     It is preferable that participants bring a laptop with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
   They should have a few specific software packages installed (listed on the <a href="setup">setup page</a>).  <br/>
