@@ -32,9 +32,8 @@ Lesson navigation bar.
         {% comment %} Always show code of conduct. {% endcomment %}
         <li><a href="{{ relative_root_path }}{% link CODE_OF_CONDUCT.md %}">Code of Conduct</a></li>
 
-        {% if site.kind == "lesson" %}
         {% comment %} Show setup instructions. {% endcomment %}
-        <li><a href="{{ relative_root_path }}{% link setup.md %}">Setup</a></li>
+        <li><a href="/setup">Setup</a></li>
 
         {% comment %} Show lesson episodes for lessons. {% endcomment %}
         {% if lesson_episodes.size > 0 %}
@@ -54,7 +53,6 @@ Lesson navigation bar.
             <li><a href="{{ relative_root_path }}{% link aio.md %}">All in one page (Beta)</a></li>
           </ul>
         </li>
-        {% endif %}
         {% endif %}
 
         {% comment %} Show extras for lessons or if this is the main workshop-template repo (where they contain
