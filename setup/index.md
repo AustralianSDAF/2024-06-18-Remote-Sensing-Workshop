@@ -4,10 +4,7 @@ title: Getting your computer ready for the workshop.
 root: ..
 ---
 ---
-# Before you complete the setup
-The main installation method of this workshop will depend the results of the initial survey.
 
-Please wait until you receive further correspondance about the preferred installation method before proceeding.
 
 
 
@@ -17,7 +14,9 @@ This workshop requires several pieces of software to be set up on your computer 
 The workshop organizers do however note that due to institutional limiations, this may not be possible on your machine due to a lack of adminstrative rights.  
 We therefore present you with a preferred local installation method, and a web-based method that only requires a google account. Please attempt the local setup, but if you are unable to complete it, please complete the online setup.  
   
-If you run into issues, please email the organizers (contact link on main workshop page) for help. There will also be an additional 30 minutes before the workshop where we may be able to help with installation issues. If you need additional help that was unable to be sorted out by email, please come early.
+If you run into issues, please email the organizers (contact link on main workshop page) for help. 
+
+There will also be an additional 45 minutes before the workshop where we will be able to help with installation issues. If you need additional help, please come early!
 
 ---
 
