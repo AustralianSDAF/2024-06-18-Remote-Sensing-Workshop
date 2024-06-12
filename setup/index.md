@@ -4,6 +4,12 @@ title: Getting your computer ready for the workshop.
 root: ..
 ---
 ---
+# Before you complete the setup
+The main installation method of this workshop will depend the results of the initial survey.
+
+Please wait until you receive further correspondance about the preferred installation method before proceeding.
+
+
 
 # Preamble <a name="preamble"></a>
 
