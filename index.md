@@ -209,7 +209,7 @@ Everyone who participates in this workshop is required to conform to the <a href
 
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop. These surveys help us both tailor the material to the current skillsets and abilities of those present, while also giving us feedback on what we did well and where we can improve.</p>
-<p><a href="https://curtin.au1.qualtrics.com/jfe/form/SV_0TCTUudmjFOcIyq">Pre-workshop Survey (sent out via email)</a></p>
+<p>Pre-workshop Survey (sent out via email)</p>
 Post-workshop Survey (to be sent out after workshop)</p>
 
 
