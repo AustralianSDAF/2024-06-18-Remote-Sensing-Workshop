@@ -4,11 +4,11 @@ layout: workshop      # DON'T CHANGE THIS.
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
 venue: "ASDAF Workshop Curtin"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: "Room 542 T.L Robertson Library, Curtin University, Kent St Bentley"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+address: "Curtin University, Kent St Bentley, Building 501, Room 117"     # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "au"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
-latitude: "-32.0054572"        # decimal latitude of workshop venue (use https://www.latlong.net/)
-longitude: "115.8943362"       # decimal longitude of the workshop venue (use https://www.latlong.net)
+latitude: "-32.008444444"        # decimal latitude of workshop venue (use https://www.latlong.net/)
+longitude: "115.893027778"       # decimal longitude of the workshop venue (use https://www.latlong.net)
 humandate: "June 14th 2024"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 5:00pm"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2024-06-14      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -93,7 +93,7 @@ This workshop, provided by <strong><a href="https://asdaf.space/">The Australian
   {{page.address}}. 
   <br>
   Get directions with
-  <a href="https://link.mazemap.com/mkozbmai">the Curtin Campus Map</a>
+  <a href="https://link.mazemap.com/jhhZJe45">the Curtin Campus Map</a>
   or
   <a href="https://maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
   <br>
@@ -121,8 +121,19 @@ This workshop, provided by <strong><a href="https://asdaf.space/">The Australian
   <strong>Requirements:</strong> <br>
     It is preferable that participants bring a laptop with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
-  They should have a few specific software packages installed (listed on the <a href="setup">setup page</a>).  <br/>
-  <b>If you cannot get the listed software installed or don't have adminstrative privileges</b>, please set up an online colab instance (listed on the  <a href="setup/#online-setup">setup page</a>).
+  They should have a few specific software packages installed (listed on the <a href="setup">setup page</a>).  <br/> <br>
+
+  We do however understand some people do not have administrative privileges. <br>
+  <b>If you cannot get the listed software installed or don't have adminstrative privileges please follow the instructions for using an online colab instance (listed on the  <a href="setup/#online-setup">setup page</a>)</b>. <br/> <br>
+
+  There will be an optional half hour before the workshop where we can check your installation and help you with any issues.
+</p>
+
+<p id="parking"> <br>
+  <strong>Parking and Public Transport:</strong> <br>
+    Parking is available throughout Curtin. We recommend you park in <a href="https://properties.curtin.edu.au/parking/zones-and-rates/">green or yellow bays</a>.  There is a car park close to building 501 that is easily accessible. You will need the <a href="https://properties.curtin.edu.au/parking/cellopark/">CellOPark</a> App to pay for parking. <b> It's recommended to install this and register on the app in advance to avoid issues on the day </b> .
+    <br>
+    Alternatively, Curtin is easily accessible via public transport. Please plan your journey ahead of time with google maps or transperth.
 </p>
 
 
@@ -139,7 +150,7 @@ This workshop, provided by <strong><a href="https://asdaf.space/">The Australian
 <p>
   Materials will be provided in advance of the workshop and
   large-print handouts are available if needed by notifying the
-  organizers in advance.  If there is anything we provide to help in make learning easier for you, please get in touch (using contact details below) and we will attempt to provide it.
+  organizers in advance.  If there is anything we can provide to help in make learning easier for you, please get in touch (using contact details below) and we will attempt to provide it.
 </p>
 {% else %}
   We are dedicated to providing a positive and accessible learning environment for all. 
@@ -198,41 +209,17 @@ Everyone who participates in this workshop is required to conform to the <a href
 
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop. These surveys help us both tailor the material to the current skillsets and abilities of those present, while also giving us feedback on what we did well and where we can improve.</p>
-<p>Pre-workshop Survey (to be sent out)</p>
+<p><a href="https://curtin.au1.qualtrics.com/jfe/form/SV_0TCTUudmjFOcIyq">Pre-workshop Survey (sent out via email)</a></p>
 Post-workshop Survey (to be sent out after workshop)</p>
 
 
 <hr/>
 
 
-{% comment %}
-SCHEDULE
-
-Show the workshop's schedule.
-
-Small changes to the schedule can be made by modifying the
-`schedule.html` found in the `_includes` folder for your
-workshop type (`swc`, `lc`, or `dc`). Edit the items and
-times in the table to match your plans. You may also want to
-change 'Day 1' and 'Day 2' to be actual dates or days of the
-week.
-
-For larger changes, a blank template for a 4-day workshop
-(useful for online teaching for instance) can be found in
-`_includes/custom-schedule.html`. Add the times, and what
-you will be teaching to this file. You may also want to add
-rows to the table if you wish to break down the schedule
-further. To use this custom schedule here, replace the block
-of code below the Schedule `<h2>` header below with
-`{% include custom-schedule.html %}`.
-{% endcomment %}
 
 <h2 id="schedule">Schedule</h2>
-TBD
-{% comment %}
  {% include dc/schedule.html %}
-{% endcomment %}
-
+<br>
 
 
 <hr/>
