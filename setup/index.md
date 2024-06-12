@@ -142,23 +142,12 @@ Google colab provides free access to CPU's to use with a notebook, but does requ
 
 9. Run the cell at the bottom of the notebook, `!ls /content/drive/MyDrive`. This should list the contents of your drive. If it does, the linking has worked!
 
-10. Run the cell below, `!pip install rioxarray eodag`. This should install the nescesary packages for this workshop not already bundled with collab.
+10. Run the cell below, `!pip install -r google_requirements.txt`. This should install the nescesary packages for this workshop not already bundled with collab.
 
 
-11. Now run the cell at the very top that says
+11. Now run the rest of the cells below
 
-```py
-import numpy
-import numba
-import pandas
-import rioxarray
-import xarray
-
-for package in [numpy, numba, pandas, rioxarray, xarray]:
-    print(f"{package.__name__} version: {package.__version__}")
-```
-
-  If you get a series of packages printed and then a version number with no errors, it worked!
+  If you get a series of packages printed and then a version number with no errors, it worked! 
 
 12. During the workshops, you will need to open notebooks from your google drive. You will also need to mount your google drive each time you open a new notebook, and access your ensure your data paths start with `'/content/drive/(other folder as applicable)'`. Help on this will be available in the workshop.
 
