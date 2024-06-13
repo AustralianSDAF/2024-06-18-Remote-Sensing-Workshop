@@ -97,7 +97,6 @@ This workshop, provided by <strong><a href="https://asdaf.space/">The Australian
   or
   <a href="https://maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
   <br>
-  Take one of the elevators on the south side to the fifth floor. The room will is approximately in the center of the floor, with appropriate signage.
 </p>
 {% endif %}
 
