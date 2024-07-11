@@ -114,38 +114,25 @@ If you have difficulty setting up the local installation, you should be able to 
 Google Colab provides free access to CPU's to use with a notebook, but does require a Google account and sufficient storage. This shouldnt be a problem unless you've already stored a lot of data on your Google Drive. In this case, please backup these files appropriatly and make at least 10GB, preferably 20GB of space.
 
 ## Setup steps
-
-1. Download the files for this workshop as a .zip file the [Github Repository](https://github.com/AustralianSDAF/ASDAF_Workshop_Materials_Remote_Sensing_Intro). To do this, click the green "<> Code" icon in the top-right, and click "download ZIP" in the dropdown menu.
- Save this to a location that makes sense to you, such as your documents folder or your desktop. Try not to save this to a locally mounted OneDrive, as that can cause issues later. Extract the .zip folder downloaded into a regular folder (right click>extract to).
  
-2. Create or log in to your Google account in a web browser at [google.com](https://google.com) (click the "sign-in" button in the top-right).
+1. Create or log in to your Google account in a web browser at [google.com](https://google.com) (click the "sign-in" button in the top-right).
 
-3. Go to your [Google Drive](https://drive.google.com/drive/home).
+2. Go to [colab.google](collab.google)
 
-4. Click "My Drive" Drag the folder you downloaded and extracted in Step 1 of this section into the Google Drive window and upload it.
+3. Accept the terms and test that you can make an empty colab notebook by clicking on the "New notebook" button.
 
-5. Open the folder you uploaded by double-clicking, then open the "notebooks" folder. Double-click on "00 - Testing notebook.ipynb". This will open a new Google Colab tab . 
+4. Go to the [Workshop Materials Page](https://github.com/AustralianSDAF/ASDAF_Workshop_Materials_Remote_Sensing_Intro) and scroll down to the README. Click on "00_Testing Notebook_colab.ipynb"
 
-
-6. Go to this new tab. Scroll down to the Google Colab section, and run the first cell that says:
+5. Read through and follow the instructions in the notebook. In particular, run the cell that includes:
   ```py
   from google.colab import drive
   drive.mount('/content/drive')
   ```
-  and a window should pop up.
+  and follow the promps in the window that pops up. Make sure "See, edit, create and delete any of your Google Drive documents" is ticked.   
+  This will let you access your Google Drive in the notebook.
 
-7. Folow the prompts in the pop up window, and make sure "See, edit, create and delete any of your Google Drive documents" is ticked. This will let you access your Google Drive in the notebook.
+6. If everything in the 00_testing notebook works without issue, congradulations you're set up! 🎉 
 
-8. The cell should run without error.
-
-9. Run the cell at the bottom of the notebook, `!ls /content/drive/MyDrive`. This should list the contents of your drive. If it does, the linking has worked!
-
-10. Run the cell below, `!pip install -r google_requirements.txt`. This should install the necessary packages for this workshop not already bundled with Colab.
-
-11. Now run the rest of the cells below.
-
-  If you get a series of packages printed and then a version number with no errors, it worked! 
-
-12. During the workshops, you will need to open notebooks from your Google Drive. You will also need to mount your Google Drive each time you open a new notebook, and access your ensure your data paths start with `'/content/drive/(other folder as applicable)'`. Help on this will be available in the workshop.
+7. During the workshops, you will need to open notebooks from the links at the [Workshop Materials Page](https://github.com/AustralianSDAF/ASDAF_Workshop_Materials_Remote_Sensing_Intro). You will also need to mount your Google Drive each time you open a new notebook, and access your ensure your data paths start with `'/content/drive/(other folder as applicable)'`. Make sure not to run the cell that says "Do not run if you are using collab", or you will need to re-run a cell at the start to re-define that variable. Help on this will be available in the workshop.
 
 
