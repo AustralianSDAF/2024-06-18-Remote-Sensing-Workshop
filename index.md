@@ -38,7 +38,9 @@ the pitch.
 {% endcomment %}
 
       
-
+<p>
+<b>Note:</b> This workshop is historical, and the website is left up as useful information for the attendees.
+</p>
 
 <p>
 This workshop, provided by <strong><a href="https://asdaf.space/">The Australian Space Data Analysis Facility (ASDAF)</a></strong>
