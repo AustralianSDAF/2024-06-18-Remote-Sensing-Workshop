@@ -1,3 +1,7 @@
+If you've found your way here, you're likely actually looking for the Workshop Materials.  
+They can be found [here](https://github.com/AustralianSDAF/ASDAF_Workshop_Materials_Remote_Sensing_Intro).  
+Alternatively the actual website link is [here](https://australiansdaf.github.io/2024-06-Remote-Sensing-Workshop/)
+
 [![Website](https://github.com/carpentries/workshop-template/actions/workflows/website.yml/badge.svg)](https://github.com/carpentries/workshop-template/actions/workflows/website.yml)
 
 # The Carpentries Workshop Template
